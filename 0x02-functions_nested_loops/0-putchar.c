@@ -1,14 +1,27 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - writes the character cto stdout
- * @c: The character to print
+ * main - Entry Point
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: Always 0 (Success)
  */
-int _putchar(char c)
+int main(void)
+
 {
-return (write(1, &c, 1));
+
+char a[] = "_putchar";
+int c;
+
+for (c = 0; c < 8; c++)
+
+{
+
+_putchar(a[c]);
+										}
+
+_putchar('\n');
+
+return (0);
+
 }
 
