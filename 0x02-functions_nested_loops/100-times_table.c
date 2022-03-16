@@ -13,13 +13,15 @@ for (i = 0; i <= n; i++)
 for (j = 0; j <= n; j++)
 {
 k = i * j;
-if (j == 0)																			{
+if (j == 0)
+{
 _putchar(k + '0');
 }
 else if (k <= 9)
 {
 _putchar(',');
-_putchar(' ');																			_putchar(' ');
+_putchar(' ');
+_putchar(' ');
 _putchar(' ');
 _putchar(k + '0');
 }
