@@ -18,7 +18,7 @@ printf("%ld, ", b);
 for (i = 3; i < 50; i++)
 {
 printf("%ld, ", s);
-a =b
+a = b;
 b = s;
 s = a + b;																			}
 printf("%ld\n", s);
