@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - causes an infinite loop
+ *
  * Return: 0
  */
 int main(void)
@@ -16,7 +17,7 @@ i = 0;
  * {
  * Infinite loop - No increase of variable
  * putchar(i);
- *}
+}
 */
 
 printf("Infinite loop avoided! \\o/\n");
