@@ -18,3 +18,20 @@ return (isqrt(n, square));
 
 }
 
+/**
+ * isqrt - wrapper function to check for squaroot.
+ * @n: number to check for squareroot.
+ * @i: squareroot.
+ * Return: 1 if squareroot is found, -1 if not found else recurse.
+ */
+
+int isqrt(int n, int i)
+
+{
+if (i * i > n)
+return (-1);
+if (i * i == n)
+return (i);
+return (isqrt(n, i + 1));
+}
+
