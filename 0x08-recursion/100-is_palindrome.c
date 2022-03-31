@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * ispalindrome - wrapper function to check for palindrome.
