@@ -1,11 +1,11 @@
-#include "stdio.h"
-#include <stdli.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - program that multuplies two numbers
- * @argc: argumet count for main
- * @argv: vector to the argument
- * Return: result of multiply or 1
+ * main - multiply two numbers
+ * @argc: arguement count
+ * @argv: array of pointers to arguement strings
+ * Return: result of multiplication or 1
  */
 
 int main(int argc, char *argv[])
@@ -20,7 +20,7 @@ return (1);
 /* atoi convert a string to an int */
 a = atoi(argv[1]);
 b = atoi(argv[2]);
-result = (a*b);
+result = a * b;
 printf("%d\n", result);
 return (0);
 }
