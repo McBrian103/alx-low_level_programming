@@ -1,5 +1,5 @@
-#include "main.h"
-#include <stdio.h>
+#include "stdio.h"
+#include <stdli.h>
 
 /**
  * main - program that multuplies two numbers
