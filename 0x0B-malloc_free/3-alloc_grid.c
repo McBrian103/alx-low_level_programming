@@ -41,7 +41,7 @@ return (NULL);
 for (i = 0; i < height; i++)
 for (j = 0; j < width; j++)
 {
-arr[i][j] = 0
+arr[i][j] = 0;
 }
 return (arr);
 
