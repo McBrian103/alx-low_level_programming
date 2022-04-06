@@ -1,10 +1,15 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef HEADER_FILE
+#define HEADER_FILE
+#include <stdio.h>
+#include <stdlib.h>
 
-int *array_range(int min, int max);
-void *_calloc(unsigned int nmemb, unsigned int size);
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+void free_grid(int **grid, int height);
+char *str_concat(char *s1, char *s2);
+char *_strdup(char *str);
 int _putchar(char c);
-void *malloc_checked(unsigned int b);
+char *create_array(unsigned int size, char c);
+int **alloc_grid(int width, int height);
+char *argstostr(int ac, char **av);  
 
 #endif
+
