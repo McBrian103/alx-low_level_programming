@@ -1,31 +1,27 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * _strdup - Duplicates string @str
- * @str: the string to be duplicated.
- * Return: NULL if str == NULL
- * A pointer to duplicated string on success.
- * NULL if insufficient memory was available.
+ * create_array - function that creates an array of chars, and initializes it
+ * with a specific char.
+ * @size: This is the length of the array
+ * @c: This is the input character
+ * Return: An Array Initialized with the specific char
  */
 
-char *_strdup(char *str)
+char *create_array(unsigned int size, char c)
 
 {
-char *dup;
-int i;
-int j = 0;
-if (str == NULL)
+unsigned int a;
+char *s;
+s = (char *) malloc(size * sizeof(char));
+if (s == NULL)
 return (NULL);
-for (i = 0 ; str[i]; i++)
-j++;
-dup = malloc(sizeof(char) * (j + 1));
-if (dup == NULL)
-return (NULL);
-for (i = 0 ; str[i]; i++)
-dup[i] = str[i];
-dup[j] = '\0';
-return (dup);
-
+for (a = 0; a < size; a++)
+{
+s[a] = c;
+}
+return (s);
 }
 
